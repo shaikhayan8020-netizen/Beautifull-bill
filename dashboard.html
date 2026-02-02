@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Beautiful Bill</title>
+<link rel="stylesheet" href="style.css">
+<script src="html2pdf.bundle.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>Welcome <span id="userEmail"></span></h2>
+<button onclick="logout()">Logout</button>
+<h4>Item Details</h4>
+<input type="text" id="item" placeholder="Item Name">
+<input type="number" id="qty" placeholder="Quantity">
+<input type="number" id="price" placeholder="Price">
+<button onclick="addItem()">Add Item</button>
+
+<div id="bill-area">
+    <ul id="billlist"></ul>
+    <h3>Total: ₹ <span id="total">0</span></h3>
+</div>
+
+<button onclick="printBill()">Print Bill</button>
+<button onclick="downloadPDF()">Download PDF</button>
+
+<hr>
+<h3>Previous Bills</h3>
+<ul id="history"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

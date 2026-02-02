@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Beautiful Bill</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>Login</h2>
+<input type="email" id="loginEmail" placeholder="Email">
+<input type="password" id="loginPass" placeholder="Password">
+<button onclick="login()">Login</button>
+<hr>
+<button onclick="googleLogin()" style="background:#DB4437">Login with Google</button>
+<p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
